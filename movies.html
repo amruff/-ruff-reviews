@@ -2,23 +2,93 @@
 <html lang="en">
     <header>
         <head>
+            <title>Movie Reviews with Alina Ruff</title>
+            <link rel="stylesheet" href="styles.css">
             <meta charset="UTF-8">
             <meta name="description" content="Free movie reviews by genre">
             <meta name="keywords" content="HTML, CSS, Javascript">
             <meta name="author" content="Alina Ruff">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Movie Reviews with Alina Ruff</title>
         </head>
-        
-        <a href="index.html">Home</a>
-        <a href="movies.html">Movies</a>
-        <a href="about.html">About</a>
-        <a href="recommendations.html"> Recommendations</a>
+        <nav role="navigation">
+            <h1>Ruff Reviews with Alina Ruff</h1>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="about.html">About</a>
+            <a href="recommendations.html"> Recommendations</a>
+            </nav>
     </header>
 
+    <style>
+        *{
+        background-color:lightgray;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+     }
+     body, html {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("movies.jpeg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+    list-style-type: none;
+    font-size: 20px;
+  }
+
+nav ul li{
+    display: inline-block;
+  }
+
+nav a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+nav a:hover{
+    background-color: darkgrey;
+    color: white;}
+
+</style>
     <body>
-        <div>
-            <p>Search for movies</p>
         <nav>
             <form id="form">
                 <input type="search" id="query" name="q"
@@ -26,26 +96,41 @@
                 <button>GO</button>
             </form>
         </nav>
+        <style>
+            * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
+            body {
+        margin: 2%;
+        justify-content: center;
+        overflow: hidden;
+    }
+        </style>
+        <div class="bg-image"></div>
+        <div class="bg-text">
         <h2>Comedy</h2>
-       <u><ul>The Campaign</ul></u> 
-       <u> <ul>Due Date</ul></u>
-        <u><ul>The Hangover</ul></u>
+    
+       <u><ul><a href ="campaign-review.html">The Campaign</a></ul></u> 
+       <u> <ul><a href="the-hangover.html">The Hangover</a></ul></u>
+        <u><ul><a href="millers.html">We're The Millers</a></ul></u>
 
         <h2>Drama</h2>
-        <u><ul>The Notebook</ul></u>
-        <u><ul>Knives Out</ul></u>
-        <u><ul>Where the Crawdads Sing</ul></u>
+        <u><ul><a href ="the-notebook.html">The Notebook</a></ul></u>
+        <u><ul><a href="gone-girl.html">Gone Girl></a></ul></u>
+        <u><ul><a href="crawdads.html">Where the Crawdads Sing</a></ul></u>
 
         <h2>Horror</h2>
-        <u><ul>Hereditary</ul></u>
-        <u><ul>The Conjuring</ul></u>
-        <u><ul>Get Out</ul></u>
+        <u><ul><a href="hereditary.html">Hereditary</a></ul></u>
+        <u><ul><a href="the-conjuring">The Conjuring</a></ul></u>
+        <u><ul><a href="get-out.html">Get Out</a></ul></u>
 
         <h2>Psychological Thriller</h2>
-        <u><ul>Prisoners</ul></u>
-        <u><ul>Fractured</ul></u>
-        <u><ul>The Girl on the Train</ul></u>
+        <u><ul><a href="prisoners.html">Prisoners</a></ul></u>
+        <u><ul><a href="fractured.html">Fractured</a></ul></u>
+        <u><ul><a href="train.html">The Girl on the Train</a></ul></u>
         </div>
     </body>
     <!-- Google tag (gtag.js) -->
