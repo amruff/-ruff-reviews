@@ -8,16 +8,28 @@
         <meta name="keywords" content="Movies, reviews, recommendations">
         <meta name="author" content="Alina Ruff">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          body{
+         background-color:lightgrey;
+     }
+     h2{
+    padding: 5px;
+    font-family: Arial;
+    font-size: 24px;
+    color: black;
+  
+
+     }
+     </style>
       </head>
     <header>
-      <nav role="navigation">
+      <nav>
         <h1>Ruff Reviews with Alina Ruff</h1>
         <a href="index.html">Home</a>
         <a href="movies.html">Movies</a>
         <a href="about.html">About</a>
         <a href="recommendations.html"> Recommendations</a>
         </nav>  
-        
         <nav>
           <form id="form">
               <input type="search" id="query" name="q"
@@ -26,14 +38,7 @@
           </form>
       </nav>
    </header>
-      <style>
-         body{
-        background-color:slategray;
-    }
-    </style>
-<br>
-
-    <body>
+   <body>
         <h2>Leave a Recommendation</h2>
       <form action="mailto:amruff@email.sc.edu" method="post" enctype="text/plain">
         Movie name: <label><input type="text" name="moviename" placeholder="Enter movie here"></label>
@@ -54,14 +59,13 @@
                 <br>
                 <br>
                   Review :<br>        
-             <textarea rows="6" cols="50" name="commentfield"></textarea>
+             <textarea rows="6" cols="200" name="commentfield"></textarea>
             <br>
                   <br>
                   <input type="submit" value="Send Recommendation">
                   <input type="reset" value="Reset">
                   </form>
-
-                  <br>
+             <br>
 
      <!-- Google tag (gtag.js) -->
           <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNVQD2ST7J"></script>
@@ -72,12 +76,8 @@
 
              gtag('config', 'G-DNVQD2ST7J');
     </script>
-
                   <footer>
-                    <tr>
                         <td colspan="3">Copyright &copy; Alina's Website 2023</td>
-                    </tr>
                 </footer>
-              
-                </body>  
+              </body>
             </html>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <header>
         <head>
             <title>Movie Reviews with Alina Ruff</title>
             <link rel="stylesheet" href="styles.css">
@@ -9,94 +8,80 @@
             <meta name="keywords" content="movie list, Horror, Drama, Thriller, Comedy">
             <meta name="author" content="Alina Ruff">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        </head>
-        <nav role="navigation">
-            <h1>Ruff Reviews with Alina Ruff</h1>
-            <a href="index.html">Home</a>
-            <a href="movies.html">Movies</a>
-            <a href="about.html">About</a>
-            <a href="recommendations.html"> Recommendations</a>
-            </nav>
-    </header>
-
-<style>
-        *{
-        background-color:lightgray;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
-     }
-     body, html {
-  height: 100%;
-}
-* {
-  box-sizing: border-box;
-}
-
-.bg-image {
-  /* The image used */
-  background-image: url("movies.jpeg");
-
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Position text in the middle of the page/image */
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
-nav {
-    list-style-type: none;
-    font-size: 20px;
-  }
-
-nav ul li{
-    display: inline-block;
-  }
-
-nav a {
-    display: inline-block;
-    padding: 1rem;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-
-nav a:hover{
-    background-color: darkgrey;
-    color: white;}
-
-</style>
-    <body>
-        <nav>
-            <form id="form">
-                <input type="search" id="query" name="q"
-                placeholder="Search Movies...">
-                <button>GO</button>
-            </form>
-        </nav>
-        <style>
+            <style>
+                *{
+                background-color:lightgray;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+             }
+             body, html {
+          height: 100%;
+        }
+        * {
+          box-sizing: border-box;
+        }
+        
+        .bg-image {
+          /* The image used */
+          background-image: url("movies.jpeg");
+        
+          /* Add the blur effect */
+          filter: blur(8px);
+          -webkit-filter: blur(8px);
+        
+          /* Full height */
+          height: 100%;
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        
+        /* Position text in the middle of the page/image */
+        .bg-text {
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+          color: white;
+          font-weight: bold;
+          border: 3px solid #f1f1f1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          width: 80%;
+          padding: 20px;
+          text-align: center;
+        }
+        nav {
+            list-style-type: none;
+            font-size: 20px;
+          }
+    header{
+        padding: 5px;
+        font-family: Arial;
+        font-size: 24px;
+        color: white;
+        }
+        
+        nav ul li{
+            display: inline-block;
+          }
+        
+        nav a {
+            display: inline-block;
+            padding: 1rem;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+          }
+        
+        nav a:hover{
+            background-color: darkgrey;
+            color: white;
+        }
             * {
         margin: 0;
         padding: 0;
@@ -108,14 +93,34 @@ nav a:hover{
         justify-content: center;
         overflow: hidden;
     }
+        
         </style>
+     </head>
+     <header>
+        <nav>
+            <h1>Ruff Reviews with Alina Ruff</h1>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="about.html">About</a>
+            <a href="recommendations.html"> Recommendations</a>
+            </nav>
+    </header>
+    <body>
+        <nav>
+            <form id="form">
+                <input type="search" id="query" name="q"
+                placeholder="Search Movies...">
+                <button>GO</button>
+            </form>
+        </nav>
+     
         <div class="bg-image"></div>
         <div class="bg-text">
         <h2>Comedy</h2>
     
-       <u><ul><a href ="campaign-review.html">The Campaign</a></ul></u> 
-       <u> <ul><a href="the-hangover.html">The Hangover</a></ul></u>
-        <u><ul><a href="millers.html">We're The Millers</a></ul></u>
+       <ul><a href ="campaign-review.html">The Campaign</a></ul>
+       <ul><a href="the-hangover.html">The Hangover</a></ul>
+        <ul><a href="millers.html">We're The Millers</a></ul>
 
         <h2>Drama</h2>
         <u><ul><a href ="the-notebook.html">The Notebook</a></ul></u>
@@ -133,19 +138,16 @@ nav a:hover{
         <u><ul><a href="train.html">The Girl on the Train</a></ul></u>
         </div>
     </body>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DNVQD2ST7J"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNVQD2ST7J"></script>
+   <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+             gtag('js', new Date());
 
-  gtag('config', 'G-DNVQD2ST7J');
-</script>
-
-    <footer>
-        <tr>
-            <td colspan="3">Copyright &copy; Alina's Website 2023</td>
-        </tr>
-    </footer>
+            gtag('config', 'G-DNVQD2ST7J');
+   </script>
+                 <footer>
+                       <td colspan="3">Copyright &copy; Alina's Website 2023</td>
+               </footer>
 </html>
